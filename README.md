@@ -4,3 +4,27 @@
 
 <img src="https://raw.githubusercontent.com/JaveedIshaq/spacx-app/4850822068cca37c53fe4a672e4d24ef3a0bd5bc/app-screenshots/code-coverage.png"> 
 
+---
+
+## Running Tests 🧪
+
+To run all unit and widget tests use the following command:
+
+```sh
+$ flutter test --coverage --test-randomize-ordering-seed random
+```
+
+To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
+
+```sh
+# Generate Coverage Report
+$ genhtml coverage/lcov.info -o coverage/
+
+# Open Coverage Report in mac
+$ open coverage/index.html
+
+# Open Coverage Report in Ubuntu
+$ google-chrome coverage/index.html
+```
+
+---
